@@ -1,4 +1,10 @@
 {
+  "main": ".open-next/worker.js",
+  "name": "memori-landing",
+  "compatibility_date": "2025-03-25",
   "compatibility_flags": ["nodejs_compat"],
-  "compatibility_date": "2024-09-23"
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  }
 }

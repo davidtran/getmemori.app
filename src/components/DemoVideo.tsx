@@ -1,18 +1,23 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import IonIcon from "@reacticons/ionicons";
 
 export default function DemoVideo() {
   const [playing, setPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
     <div
       className="relative w-full aspect-[12/8] rounded-3xl overflow-hidden shadow-2xl cursor-pointer"
-      onClick={() => setPlaying(true)}
+      onClick={() => {
+        setPlaying(true);
+        videoRef.current?.play();
+      }}
     >
       <video
         className="w-full h-full object-cover"
         src="https://cdn.studyfoc.us/copy_88ECE7F6-3C56-465B-ACE1-0098B4C88124.mp4"
         controls
+        ref={videoRef}
         autoPlay
       />
       {!playing && (

@@ -1,0 +1,27 @@
+{
+  "app": {},
+  "appUsingSizeAdjust": false,
+  "pages": {
+    "/": [
+      "static/media/3c285486269019b7-s.p.f6eddd95.woff2",
+      "static/media/a4f4f75ad654963f-s.p.bab09490.woff2",
+      "static/media/8f46d218c8f79e34-s.p.12435988.woff2",
+      "static/media/6f42e0a3b0519c4d-s.p.7183773d.woff2",
+      "static/media/3eca85881bcfa204-s.p.70aaf131.woff2",
+      "static/media/00ea0ef410d3b1a3-s.p.1491abd8.woff2",
+      "static/media/98f992443ccb276f-s.p.f116b7bd.woff2",
+      "static/media/23d3c9ac01cd973c-s.p.b0423ba8.woff2",
+      "static/media/9d71b78498c53c0d-s.p.eca69457.woff2",
+      "static/media/2a5f8cbcbf53c8e9-s.p.29d81864.woff2",
+      "static/media/eb68325913455635-s.p.b667c90f.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+      "static/media/c875c6f5d3e977ac-s.p.80fc2c9e.woff2",
+      "static/media/8e6fa89aa22d24ec-s.p.3aec397d.woff2",
+      "static/media/e2334d715941921e-s.p.d82a9aff.woff2",
+      "static/media/47fe1b7cd6e6ed85-s.p.855a563b.woff2",
+      "static/media/829ba4228c966254-s.p.a61bc753.woff2",
+      "static/media/4b766aa38fdaaae3-s.p.6d98c708.woff2"
+    ]
+  },
+  "pagesUsingSizeAdjust": true
+}
