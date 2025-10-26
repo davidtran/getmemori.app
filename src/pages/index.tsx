@@ -1,11 +1,8 @@
-import { useState } from "react";
-import Image from "next/image";
 import { Be_Vietnam_Pro, Inter, Spectral, Poppins } from "next/font/google";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { ANDROID_APP_URL, IOS_APP_URL } from "@/constants/app";
 import { DownloadButtons } from "@/components/DownloadButtons";
 import { FeatureHighlights } from "@/components/FeatureHighlights";
-import IonIcon from "@reacticons/ionicons";
 import DemoVideo from "@/components/DemoVideo";
 
 const beVietnamPro = Be_Vietnam_Pro({
@@ -36,14 +33,6 @@ const fontTitle = spectral.className;
 // Before/After Comparison Slider Component
 
 export default function Home() {
-  function handleIosDownload() {
-    window.location.href = IOS_APP_URL;
-  }
-
-  function handleAndroidDownload() {
-    window.location.href = ANDROID_APP_URL;
-  }
-
   return (
     <div
       className={`${beVietnamPro.variable} ${inter.variable} ${poppins.variable} ${spectral.variable} ${poppins.className} font-[500] bg-[#FFF6E3] min-h-screen`}

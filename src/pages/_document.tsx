@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -37,6 +38,19 @@ export default function Document() {
           name="google"
           content="notranslate"
         />
+
+        <Script
+          id="google-tag"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZRVM1THQZ1"
+        ></Script>
+        <Script id="google-analytics">
+          {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZRVM1THQZ1');`}
+        </Script>
       </Head>
       <body className="antialiased">
         <Main />

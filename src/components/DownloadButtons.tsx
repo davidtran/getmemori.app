@@ -1,6 +1,7 @@
 import { ANDROID_APP_URL, IOS_APP_URL } from "@/constants/app";
+import classNames from "classnames";
 
-export function DownloadButtons() {
+export function DownloadButtons({ className }: { className?: string }) {
   function handleIosDownload() {
     window.location.href = IOS_APP_URL;
   }
@@ -9,7 +10,12 @@ export function DownloadButtons() {
     window.location.href = ANDROID_APP_URL;
   }
   return (
-    <div className="flex flex-row gap-2 justify-center items-center">
+    <div
+      className={classNames(
+        "flex flex-row gap-2 justify-center items-center",
+        className
+      )}
+    >
       <div
         onClick={handleIosDownload}
         className={`flex-1 cursor-pointer sm:flex-none bg-[linear-gradient(180deg,#B35832_0%,#9E4927_100%)] text-white px-4 py-2 sm:px-8 sm:py-4 rounded-2xl font-light text-lg inline-flex items-center gap-3 shadow-sm transition-[transform,box-shadow] hover:shadow-md hover:-translate-y-0.5`}
